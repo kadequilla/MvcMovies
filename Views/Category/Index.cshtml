@@ -1,0 +1,52 @@
+﻿@model IEnumerable<Category>
+
+@{
+    ViewData["Title"] = "Category";
+}
+
+
+<!-- Button trigger modal -->
+
+<div class="container-page">
+    <div class="page-body"> 
+        <h3 class="mb-4">Category</h3>
+
+        <button onclick="showModal('myModal')" type="button" class="btn btn-primary btn-dark mb-3" data-toggle="modal" data-target="#exampleModal">Add new Category</button>
+        <table class="table table-hover">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Description</th>
+                    <th scope="col">Date Created</th>
+                    <th scope="col">Action</th>
+                </tr>
+            </thead>
+            <tbody>
+                @foreach (var item in Model)
+                {
+                    <tr>
+                        <td>@item.Name</td>
+                        <td>@item.Description</td>
+                        <td>@item.DateCreated</td>
+                        <td>
+                            <button type="button" class="btn btn-secondary btn-sm">Update</button>
+                        </td>
+                    </tr>
+                }
+            </tbody>
+        </table>
+    </div>
+
+    <!-- Modal -->
+    <div class="d-none" id="myModal">
+        <div class="modal-overlay">
+        </div>
+        <div class="modal-body">
+            <div class="d-flex modal-action">
+                <button onclick="hideModal('myModal')" class="btn btn-light mr-1">Cancel</button>
+                <button class="btn btn-dark ">Okay</button>
+            </div>
+        </div>
+    </div>
+   
+</div>

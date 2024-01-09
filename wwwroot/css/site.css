@@ -20,3 +20,22 @@ html {
 body {
   margin-bottom: 60px;
 }
+
+th, td {
+    border: 0;
+}
+
+.container-page {
+    position: absolute;
+    width: 100%;
+}
+
+
+.page-body{
+    margin-left: 20%;
+    margin-right: 20%
+}
+
+.mr-1 {
+    margin-right: 5px;
+}

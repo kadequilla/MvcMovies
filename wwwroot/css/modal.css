@@ -1,0 +1,26 @@
+﻿.modal-overlay {
+    background-color: black;
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    top: -25%;
+    opacity: 0.2
+}
+
+.modal-body {
+    position: absolute;
+    top: 5%;
+    left: 25%;
+    width: 50%;
+    background: whitesmoke;
+    min-height: 350px;
+    border: 1px solid #d9d9d9;
+    border-radius: 10px;
+    opacity: 1;
+}
+
+.modal-action {
+    position: absolute;
+    bottom: 5%;
+    right: 2%;
+}
